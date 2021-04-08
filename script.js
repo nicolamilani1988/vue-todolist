@@ -7,7 +7,8 @@ function init(){
         data:{
             todos:[
               "spesa",
-              "mangiare"  
+              "mangiare",
+              
             ],
             task:"",
             
@@ -16,7 +17,9 @@ function init(){
 
         methods:{
             addTodo: function(){
+                if(this.task.length > 0){
                 this.todos.push(this.task);
+                }
             }
         }
     })
