@@ -7,27 +7,48 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <!-- VueJS -->
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-        <!-- Bootstrap (CSS) -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <title>Vue - intro</title>
+        <!-- font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+        <title>Vue - To-do list</title>
         <link rel="stylesheet" href="style.css">
         <script src="script.js" charset="utf-8"></script>
     </head>   
 
     <body>
 
-        <!-- logo -->
-        <header>
+        <div id="app" class="container">
 
-        </header>
-        <!-- section add todo -->
-        <section>
+            <!-- logo -->
+            <header>
+                <div class="img-container">
+                    <img src="./img/logo.png" alt="">
+                </div>
+            </header>
+            <!-- section add todo -->
+            <section id="input-todo">
+                <!-- input todo -->
+                <input type="text" placeholder="type your to-do">
+                <button>Aggiungi</button>
 
-        </section>
-        <!-- todo list -->
-        <section>
+            </section>
+            <!-- todo list -->
+            <section id="todo-list">
+                <ul>
+                    <li>
+                        TODO 1
+                        <i class="fas fa-times"></i>
+                    </li>
+                    <li>
+                        TODO 2
+                    </li>
+                    <li>
+                        TODO 3
+                    </li>
+                </ul>
+            </section>
 
-        </section>
-        
+        </div>    
+
     </body>
 </html>
