@@ -5,11 +5,19 @@ function init(){
         el: "#app",
 
         data:{
+            todos:[
+              "spesa",
+              "mangiare"  
+            ],
+            task:"",
+            
 
         },
 
         methods:{
-
+            addTodo: function(){
+                this.todos.push(this.task);
+            }
         }
     })
 }

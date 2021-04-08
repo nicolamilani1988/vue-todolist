@@ -28,23 +28,23 @@
             <!-- section add todo -->
             <section id="input-todo">
                 <!-- input todo -->
-                <input type="text" placeholder="type your to-do">
-                <button>Aggiungi</button>
+                <input v-model="task" type="text" placeholder="type your to-do">
+                <button @click="addTodo">Aggiungi</button>
 
             </section>
             <!-- todo list -->
             <section id="todo-list">
                 <ul>
-                    <li>
-                        TODO 1
+                    <li v-for="todo in todos.length">
+                        {{task}}
                         <i class="fas fa-times"></i>
                     </li>
-                    <li>
+                    <!-- <li>
                         TODO 2
                     </li>
                     <li>
                         TODO 3
-                    </li>
+                    </li> -->
                 </ul>
             </section>
 
