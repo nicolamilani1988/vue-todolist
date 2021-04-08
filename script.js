@@ -19,7 +19,11 @@ function init(){
             addTodo: function(){
                 if(this.task.length > 0){
                 this.todos.push(this.task);
+                this.task = "";
                 }
+            },
+            myRemoveTodo: function(index){
+                this.todos.splice(index,1);
             }
         }
     })
